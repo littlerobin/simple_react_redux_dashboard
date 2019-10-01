@@ -1,0 +1,19 @@
+[class*="level0"].e-row {
+	background-color: #AAAAAA !important;
+}
+[class*="level0"].e-row.e-altrow {
+	background-color: #BBBBBB !important;
+}
+[class*="level1"].e-row {
+	background-color: #F0F4F7 !important;
+}
+[class*="level1"].e-row.e-altrow {
+	background-color: #FFFFFF !important;
+}
+.e-rowcell {
+	text-align: left;
+	color: black !important;
+}
+.e-columnheader {
+	display: none;
+}

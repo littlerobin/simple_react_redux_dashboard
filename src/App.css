@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+.form-signin {
+  margin-top: 5%;
+}
+.form-label-group {
+  padding: 10px 0;
+}
+.form-button {
+  background-color: #343a40 !important;
+  color: #fff !important;
+  padding: 10px !important;
+  text-transform: unset !important;
+  margin-top: 10px;
+}
+
+.nav {
+  flex-direction: column;
+  text-align: left;
+}
+
+.nav .nav-item a.nav-link {
+  color: #000 !important;
+}
+
+.nav .nav-item {
+  background: #e4e4e4;
+  margin-bottom: 1px;
+}
+.nav .nav-item:hover {
+  background: #343a40 !important;
+}
+
+.nav .nav-item:hover a.nav-link {
+  color: #fff !important;
+}
+
+.flex-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

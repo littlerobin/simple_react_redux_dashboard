@@ -1,0 +1,30 @@
+import React,{Suspense} from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { BrowserRouter} from "react-router-dom";
+import { PersistGate } from "redux-persist/integration/react";
+import { store, persistor } from "./redux/store";
+import { Provider } from "react-redux";
+
+ReactDOM.render(
+  <Provider store={store}>
+    <BrowserRouter>
+    <Suspense fallback={<div>Loading...</div>}>
+      <PersistGate persistor={persistor}>
+        <App />
+      </PersistGate>
+      </Suspense>
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById("dvappcontainer")
+);
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
